@@ -1,6 +1,16 @@
 #include<stdio.h>
-int bubble(int array[])
+#define n 5
+int a[];
+int i,j;
+
+int bubble()
 {
-    int j,k;
-    
+    for(i=0; i<n; i++)
+    {
+        for(j=0; j<n-1; j++)
+        {
+            
+        }
+    }
+
 }
