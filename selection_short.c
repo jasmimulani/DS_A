@@ -3,17 +3,17 @@
 #define n 5
 int a[n],i,j,t;
 
-int bubble()
+int selection()
 {
     for(i=0; i<n; i++)
     {
-        for(j=0; j<n-i; j++)
+        for(j=0; j<n-1; j++)
         {
-           if (a[j]>a[j+1])
+           if (a[i] < a[j])
            {
-           t=a[j];
-           a[j]=a[j+1];
-           a[j+1]=t;
+           t=a[i];
+           a[i]=a[j];
+           a[j]=t;
            }
         }
     }
@@ -28,12 +28,10 @@ int bubble()
         printf("%d ",a[i]);
     }
 
-    bubble(t,n);
+    selection(t,n);
 
-    printf("\n bubble :");
+    printf("\n selection :");
     for(i=0; i<n; i++)
-    {
-      printf("%d ",a[i]);
-    }  
+      printf("%d ",a[i]);  
 
  }
