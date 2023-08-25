@@ -1,4 +1,4 @@
-//fifo->frist insert frist out
+//fifo->frist insert frist out....
 
 #include<stdio.h>
 #include<stdlib.h>
