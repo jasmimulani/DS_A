@@ -1,6 +1,9 @@
 #include<stdio.h>
+
 #define n 5
+
 int a[n],f=-1,r=-1;
+
 int insertend(int val)
 {
     if(r < 0)
@@ -18,6 +21,7 @@ int insertend(int val)
          a[r]=val;
     }
 }
+
 int delate()
 {
     if(r<0)
@@ -29,6 +33,7 @@ else if(f==r)
 else
     f=(f+1)%n;
 }
+
 int display()
 {
     int i = f;
@@ -45,8 +50,10 @@ int display()
         }
         while(i != (r+1)%n);
     }
+
     printf("\n");
-  }  
+  } 
+
 int main()
 {
     insertend(10);
@@ -55,6 +62,8 @@ int main()
     insertend(40);
     insertend(50);
     insertend(60);
+
     delate();
+
     display();
 }
