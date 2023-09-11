@@ -71,18 +71,18 @@
       struct node  *temp = malloc(sizeof(struct node));
 
       temp -> data =val;
-      temp -> next =head;
 
-      if(temp -> next =head)
+      if(head == NULL)
       {
         head = temp;
+        temp -> next = NULL;
+        temp -> prev = NULL;
         return;
       }  
-       while(head == NULL)
-       {
-         head = temp;
-         return;
-       }  
+        temp -> next = ptr;
+        ptr -> prev = temp;
+        head = temp;
+        return;
    }
    void fristdelete()
    {
